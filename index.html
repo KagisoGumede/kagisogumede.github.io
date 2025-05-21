@@ -1,273 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kagiso's Portfolio Website</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/224bb5652b.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-          <nav>
-             <imag src="images/name.png.jpeg"alt="logo"></imag>
-              <ul id="sidemenu">
-               
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <i class="fa-solid  fa-rectangle-xmark" onclick="closemenu()"></i>
-                
-              
-              </ul>
-              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-             </nav>
-             <div class="header-text">
-              <p>Informatics</p>
-              <h1> Hi, I'm<span>Kagiso</span><br> Gumede from <br>pretoria</h1>
-             </div>  
-        </div>
-    </div>
-   <!-------------- ------------ about--------------------------> 
- <div id= "about">
-   <div class="container">
-     <div class="row">
-       <div class="about-col-1">
-         <img src="images/me.png.jpeg">
-
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <p>As a final-year Informatics student, I possess a strong foundation in business
-analysis, software testing, and programming, with skills in gathering
-requirements, business process modeling, and creating process flows using
-UMLs. I'm proficient in tools like MS Visio, Visio Paradigm, and UML Designer,
-and experienced in user interface design using Figma. Additionally, I have
-programming skills in Java and a basic understanding of web development
-using HTML, CSS, and JavaScript. With excellent communication and
-leadership skills, I'm an innovative and motivated individual who thrives on
-learning new things. I'm eager to apply my theoretical knowledge in a realworld setting and contribute to industry projects</p>
-
-
-
-         <div class="tab-titles">
-          <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
-          <P class="tab-links" onclick="opentab('experience')">Experience</P>
-          <P class="tab-links" onclick="opentab('education')">Education</P>
-       
-
-         </div> 
-         <div class="tab-contents active-tab" id="skills">
-           <ul>
-           <li>Project Manager</li>
-           <li>System Analyst<br>Business Analyst</li>
-           <li>Software Tester</li>
-           
-
-           
-
-
-           </ul>
-
-
-         </div>
-         <div class="tab-contents" id="experience">
-          <ul>
-          <li><span>2025 - Current</span><br>Junior Business Analyst trainee at Raincloud.</li>
+  <div id="header"> 
+    <div class="container">
+      <nav>
         
-          </ul>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="hero-section">
+        <div class="hero-text">
+          <h3>Hello, Myself</h3>
+          <h1>Kagiso Gumede</h1>
+          <h3>and I'm a <span class="multiple-text"></span></h3>
+        </div>  
+        <div class="profile-image">
+          <img src="images/self.png.jpeg" alt="Kagiso Gumede" />
         </div>
-
-        <div class="tab-contents" id="education">
-          <ul>
-          <li><span> 2022-2025</span><br>Final Year Dip(informatics) student at TUT University of Technlogy<br></li>
-          <li><span>2025-July</span><br>Starting internship </li>
-          
-          </ul>
-        </div>
-
-
       </div>
     </div>
-   </div>
-   </div>
-<!------------------services---------------->
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">Skills in Action</h1>
-    <div class="services-list">
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/me.png.jpeg" alt="About Me Image" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As a final-year Diploma in Informatics student, I bring a versatile skill set to the table. With expertise in Business Analysis, System Analysis, and Project Management, I'm equipped to drive projects from conception to delivery. Additionally, I possess skills in Software Testing, UI/UX design using Figma, and Agile project management with Jira.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>Project Manager</li>
+              <li>System Analyst / Business Analyst</li>
+              <li>Software Tester</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2025 - Current</span><br>Junior Business Analyst trainee at Raincloud</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022 - 2025</span><br>Final Year Dip (Informatics) student at TUT</li>
+              <li><span>2025 - July</span><br>Starting Internship</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
         <div>
           <i class="fa-solid fa-code"></i>
-           <h2>System and Business Analyst</h2>
-           <p>A System Analyst analyzes and improves business systems using technology solutions, 
-            while a Business Analyst identifies business needs and opportunities,
-             and develops solutions to improve business processes and operations.</p>
-             <a href="#">Learn more</a>
+          <h2>System and Business Analyst</h2>
+          <p>Analyzes and improves business systems using technology solutions while identifying business needs and opportunities to improve operations.</p>
+          <a href="#">Learn more</a>
         </div>
-
         <div>
           <i class="fa-solid fa-crop"></i>
           <h2>Software Tester</h2>
-          <p>A Software Tester evaluates and verifies software applications to ensure they meet requirements,
-             are free from defects, and function as intended.</p>
-            <a href="#">Learn more</a>
-       </div>
-
-       <div>
-        <i class="fa-solid fa-laptop-code"></i>
-        <h2>Project Manager</h2>
-        <p>A Project Manager plans, organizes, and oversees projects from start to finish, 
-          ensuring they are completed on time, 
-          within budget, and to the required quality standards.</p>
+          <p>Evaluates and verifies software applications to ensure they meet requirements and function as intended.</p>
           <a href="#">Learn more</a>
-     </div>
-
-
-
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Project Manager</h2>
+          <p>Plans and oversees projects from start to finish, ensuring they meet time, budget, and quality requirements.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-   
-<!--------------------------portfolio------------------->
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My work</h1>
-    <div class="work-list">
 
-      <div class="work">
-        <img src="images/Screen.png.jpeg">
-        <div class="layer">
-          <h3>PROJECT 1: INTEGRATION HRM SOLUTION</h3>
-           <p>The objective is to design and develop a comprehensive and integrated HR platform that streamlines multiple HR functions, including recruitment, payroll, time & attendance, and learning & development. This platform aims to simplify operations, improve data accuracy, and enhance user experience for employees, managers, and HR personnel. By automating and consolidating these functions, the platform will increase productivity, reduce errors, and provide data-driven insights to inform strategic decision-making, ultimately transforming HR operations and improving employee engagement.</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-          </div>
- 
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
         <div class="work">
-          <img src="images/portfolio.png.jpeg">
-        <div class="layer">
-          <h3>Cafeteria E-commerce Website</h3>
-           <p>Objective: As informatics students, my group and I visited a small enterprise and discovered that our cafeteria was losing customers due to a lack of technology. Therefore, we decided to build an e-commerce website. I participated in this project as a Business Analyst and System Analys</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <img src="images/Screen.png.jpeg" alt="HRM Project" />
+          <div class="layer">
+            <h3>PROJECT 1: INTEGRATION HRM SOLUTION</h3>
+            <p>Streamlines HR functions including recruitment, payroll, time & attendance, and L&D into a unified platform.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
-          
-
         </div>
+        <div class="work">
+          <img src="images/portfolio.png.jpeg" alt="Cafeteria Project" />
+          <div class="layer">
+            <h3>Cafeteria E-commerce Website</h3>
+            <p>Developed to digitize local cafeteria services. Served as Business Analyst and System Analyst.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
         </div>
       </div>
       <a href="#" class="btn">See more</a>
     </div>
   </div>
-</div>
-<!--------------------contact-------------->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
 
-        <h1 class="sub-title"> Contact Me</h1>
-        <p><i class="fa-solid fa-paper-plane"></i>mazwig739@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>0722880633</p>
-
-        <div class="social-icons">
-          <a href="h"><i class="fa-brands fa-linkedin"></i></a>
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> mazwig739@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 072 288 0633</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-
-          <a href="images/Kagiso.CV.pdf"  download class="btn btn2">Resume</a>
-
+          <a href="images/cv.pdf" download class="btn btn2">Resume</a>
         </div>
-         </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
-            <input type="text"  name="Name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="Email" name="Email" placeholder="Your Email" required />
             <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
-          <span  id="msg"></span>
-         
+          <span id="msg"></span>
         </div>
-
-      
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Ntandoyenkosi Kagiso <i class="fa-solid fa-heart"></i> Gumede</p>
     </div>
   </div>
-  <div class="copyright">
-    <p>Copyright Ntandoyenkosi Kagiso<i class="fa-solid fa-heart"></i> Gumede</p>
-  </div>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    const typed = new Typed('.multiple-text', {
+      strings: ['Business Analyst', 'System Analyst', 'Software Tester', 'Project Manager', 'UI/UX Designer (User Interface)',],
+      typeSpeed: 50,
+      backSpeed: 80,
+      backDelay: 1200,
+      loop: true,
+    });
+  </script>
 
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-</div>
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
 
-   
-<script>
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
 
-function opentab(tabname){
-  for(tablink of tablinks){
-       tablink.classList.remove("active-link");
-  }
-  for(tabcontent of tabcontents){
-    tabcontent.classList.remove("active-tab");
-  }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygRfgoUsd8kyC-tcQ3IpRuWjRR2u7q319mVrvi5HF48jiTPfJj1UmPYAS2ukW1Es-Y/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
 
-
-</script>
-
-<script>
-
-  var sidemenu = document.getElementById("sidemenu");
- 
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px";
-  }
-
-  
-</script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbygRfgoUsd8kyC-tcQ3IpRuWjRR2u7q319mVrvi5HF48jiTPfJj1UmPYAS2ukW1Es-Y/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-
-
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent successfully"
-        setTimeout(function() {
-          msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-  
- 
-
-
-  
-  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
 </body>
 </html>
-
-
-
